@@ -30,8 +30,6 @@ if y== 12 or y == 11:
     data = json.loads(response.text)
     data2 = json.loads(response2.text)
 
-
-
     ws["C1"] = data2[0]["no"]
     ws["B1"] = "waluta2"
     ws["A1"] = "waluta"
@@ -41,7 +39,6 @@ if y== 12 or y == 11:
         ws["A" + str(r + 1)] = data2[0]["rates"][r]["currency"]
         ws["B" + str(r + 1)] = data2[0]["rates"][r]["code"]
         ws["C" + str(r + 1)] = data2[0]["rates"][r]["mid"]
-
 
     for col in range(1, len(data2)):
         char = get_column_letter(col + 3)

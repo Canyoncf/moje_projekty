@@ -69,12 +69,12 @@ if y== 12 or y == 11:
     ws.add_table(tab)
 else:
 
-    if len({x.day}) == 1:
+    if len(str({x.day})) == 1:
         m = f"0{x.day}"
     else:
         m = f"{x.day}"
 
-    if len({y}) == 1:
+    if len(str({y})) == 1:
         y = f"0{y}"
     else:
         y = f"{y}"
